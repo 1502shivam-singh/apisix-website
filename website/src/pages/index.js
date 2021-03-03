@@ -10,7 +10,7 @@ import ChevronRight from "../assets/icons/chevron-right.svg";
 
 const HomeSplash = () => {
   const [featureWordIndex, setFeatureWordIndex] = useState(0);
-  const featureWords = ["Dynamic", "Real-Time", "High-Performance"];
+  const featureWords = ["Dynamic", "Real-Time", "Performant"];
 
   const [isShow, setIsShow] = useState(true);
 
@@ -36,7 +36,6 @@ const HomeSplash = () => {
       <div className="container">
         <div className="inner">
           <div className="padding-vert--md">
-            <h1 className="title brand">Apache APISIX™</h1>
             <h1 className="title slogan">
               A&nbsp;
               <span className="feature-word">
@@ -55,7 +54,7 @@ const HomeSplash = () => {
                   <span>{featureWords[featureWordIndex]}</span>
                 </CSSTransition>
               </span>
-              &nbsp;Cloud-Native API Gateway
+              &nbsp; Cloud-Native API Gateway
             </h1>
             <div className="subtitle">
               Provides rich traffic management features such as load balancing,
@@ -108,7 +107,7 @@ const LearnHow = () => (
           <div className="col">
             <img
               className="image"
-              src="https://github.com/apache/apisix/blob/master/doc/images/apisix.png?raw=true"
+              src="https://github.com/apache/apisix/blob/master/docs/assets/images/apisix.png?raw=true"
               align="right"
               alt="apisix-description"
             />
@@ -142,7 +141,7 @@ const Showcase = () => {
           <br />
           Are you using this project?{" "}
           <a
-            href="https://github.com/apache/apisix/blob/master/doc/powered-by.md"
+            href="https://github.com/apache/apisix/blob/master/docs/en/latest/powered-by.md"
             target="_blank"
             rel="noopener"
           >

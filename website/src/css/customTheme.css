@@ -57,20 +57,34 @@ header h2 {
   color: var(--color-primary);
 }
 
+.navbar__title{
+  font-size: 18px;
+  height: 30px;
+}
+
 /* home splash */
 .home-splash {
-  margin-top: 8px;
+  margin-top: 0px;
+  margin-bottom: -50px;
+}
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+  .home-splash {
+    margin-top: -20px;
+    margin-bottom: -50px;
+  }
 }
 
 .home-splash .title {
-  font-size: 2.4rem;
-  color: black;
+  font-size: 4.0rem;
+  color: #df2d2d;
   opacity: 0.92;
 }
-
-.home-splash .title.brand {
-  font-size: 2.9rem;
-  color: #df2d2d;
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+  .home-splash .title {
+    font-size: 2.9rem;
+    color: #df2d2d;
+    opacity: 0.92;
+  }
 }
 
 .home-splash .title.slogan .feature-word {
@@ -88,6 +102,16 @@ header h2 {
   color: #000000;
   opacity: 0.58;
   font-size: 1.2rem;
+  width: 65%;
+}
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+  .home-splash .subtitle {
+    color: #000000;
+    opacity: 0.58;
+    font-size: 1.2rem;
+    width: 100%;
+    margin-top: 30px;
+  }
 }
 
 .home-splash .button-wrapper {
@@ -248,6 +272,7 @@ header h2 {
 }
 .learn-how .container {
   margin-top: 36px;
+  padding-bottom: 30px;
 }
 .learn-how .hero__title {
   font-weight: 700;
@@ -278,10 +303,15 @@ header h2 {
   color: white;
   display: inline-flex;
   align-items: center;
+  margin-bottom: 15px;
+  padding: 12px;
+  justify-content: center;
+  width: 224px;
+
 }
 .button.github .github-logo {
   height: 24px;
-  margin: 0 8px 1px 0px;
+  margin: 0 12px 1px 0px;
 }
 .button.github:hover {
   background: #000;
@@ -294,6 +324,10 @@ header h2 {
   color: var(--color-secondary);
   border: 1px solid #d1d5db;
   box-sizing: border-box;
+  margin-bottom: 15px;
+  width: 224px;
+  padding: 12px;
+  justify-content: center;
 }
 .button.secondary:hover {
   background: #e5e7eb;
@@ -350,7 +384,7 @@ a:hover {
   opacity: 0.88;
 }
 
-/* 
+/*
   Animations
 */
 
